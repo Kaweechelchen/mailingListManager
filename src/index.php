@@ -53,15 +53,6 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
 
-      <style>
-
-        /* Move down content because we have a fixed navbar that is 50px tall */
-        body {
-          padding-top: 20px;
-        }
-
-      </style>
-
     </head>
 
     <body>
@@ -85,11 +76,13 @@
                 ?>
 
                 <div class="col-md-4">
-                  <h2><?= $list[ 'name' ] ?></h2>
-                  <p><?= $list[ 'description' ] ?></p>
-                  <p><a class="btn btn-success" href="mailto:<?= $list[ 'name' ] ?>-join@lists.hackerspace.lu?subject=just send this empty email to subscribe" role="button">Subscribe to <?= $list[ 'name' ] ?></a></p>
-                  <p><a class="btn btn-warning" href="mailto:<?= $list[ 'name' ] ?>-request@lists.hackerspace.lu?subject=just send this empty email to reset your password&body=password" role="button">Reset password on <?= $list[ 'name' ] ?></a></p>
-                  <p><a class="btn btn-danger" href="mailto:<?= $list[ 'name' ] ?>-leave@lists.hackerspace.lu?subject=just send this empty email to unsubscribe" role="button">Unubscribe from <?= $list[ 'name' ] ?></a></p>
+                  <div class=" well">
+                    <h2><?= $list[ 'name' ] ?></h2>
+                    <p><?= $list[ 'description' ] ?></p>
+                    <p><a class="btn btn-success btn-block" href="mailto:<?= $list[ 'name' ] ?>-join@lists.hackerspace.lu?subject=just send this empty email to subscribe" role="button">Subscribe to <?= $list[ 'name' ] ?></a></p>
+                    <p><a class="btn btn-warning btn-block" href="mailto:<?= $list[ 'name' ] ?>-request@lists.hackerspace.lu?subject=just send this empty email to reset your password&body=password" role="button">Reset password on <?= $list[ 'name' ] ?></a></p>
+                    <p><a class="btn btn-danger btn-block" href="mailto:<?= $list[ 'name' ] ?>-leave@lists.hackerspace.lu?subject=just send this empty email to unsubscribe" role="button">Unubscribe from <?= $list[ 'name' ] ?></a></p>
+                  </div>
                 </div>
 
                 <?php
